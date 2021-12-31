@@ -1,0 +1,1 @@
+Compare-Object $file1 $file2

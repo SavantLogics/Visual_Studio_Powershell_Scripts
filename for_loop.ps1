@@ -1,6 +1,6 @@
 ## Use a FOR loop and output the results to a file 10 times
 
-$output = "You Are Little More Than A Immediately Inbred Toad And A Quarrelsome Ill-Nurtured Scut. Never Have I Encountererd Such An Axiomatic Hedge-Born Canker-Blossom. My Good Man, You Are But A Currish Rough-hewn Flirt-gill. You Really Are A Magnificent Plume-plucked Dingus. Never Have I Encountererd Such A Even Clay-brained Affliction. My Dear Lady, You Are But A Bootless Badly Evolved Giglet. Never Have I Encountererd Such A Valuable Dread-Bolted Wet Lettuce. My Good Man, You Are But A Tearful Onion-Eyed Dingleberry. Madam, You Are Little More Than A Abrasive Fen-sucked Chimpanzee."
+$output = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 For($index = 1; $index -le 10; $index++ )
 {

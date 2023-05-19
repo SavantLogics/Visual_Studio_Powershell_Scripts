@@ -1,0 +1,25 @@
+# Specify the directory to organize
+$directoryPath = "C:\your\directory\path"
+
+# Get all files in the directory
+$files = Get-ChildItem $directoryPath -File
+
+# Loop through each file
+foreach ($file in $files) {
+    # Get the file extension
+    $extension = $file.Extension.TrimStart('.')
+
+    # If the file has an extension
+    if ($extension) {
+        # Determine the new directory path
+        $newDirectoryPath = Join-Path -Path $directoryPath -ChildPath $extension
+
+        # If the new directory does not exist, create it
+        if (!(Test-Path -Path $newDirectoryPath -PathType Container)) {
+            New-Item -Path $newDirectoryPath -ItemType Directory
+        }
+
+        # Move the file to the new directory
+        Move-Item -Path $file.FullName -Destination $newDirectoryPath
+    }
+}
